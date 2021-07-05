@@ -3,6 +3,7 @@ import client from "../../client";
 import jwt from "jsonwebtoken";
 
 export default {
+    Mutation : {
         login : async (_, {username, password} ) => {
             // find user with args.username
             const user = await client.user.findFirst({where:{username}});
@@ -29,3 +30,4 @@ export default {
             }
         }
     }
+}
