@@ -6,10 +6,6 @@ const __dirname = path.resolve();
 const loadedTypes = loadFilesSync(`${__dirname}/**/*.typeDefs.js`);
 const loadResolvers = loadFilesSync(`${__dirname}/**/*.resolvers.js`);
 
-const typeDefs = mergeTypeDefs(loadedTypes);
-const resolvers = mergeResolvers(loadResolvers);
+export const typeDefs = mergeTypeDefs(loadedTypes);
+export const resolvers = mergeResolvers(loadResolvers);
 
-
-const schema = makeExecutableSchema({typeDefs,resolvers})
-
-export default schema;
