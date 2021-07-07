@@ -35,7 +35,10 @@ export default {
                     password : uglyPassword,
                 }})
         } catch (e) {
-            return e;
+            return {
+                ok:false,
+                error:"Can't create account"
+            }
         }
         },
 
