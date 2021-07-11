@@ -31,7 +31,8 @@
     "graphql-tools": "^7.0.5",
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.9"
+    "nodemon": "^2.0.9",
+    "prettier-plugin-prisma": "^0.13.2"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
@@ -43,4 +44,5 @@
     "fs-capacitor": "^6.2.0",
     "graphql-upload": "^11.0.0"
   }
+ 
 }
