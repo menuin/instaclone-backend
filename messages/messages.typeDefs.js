@@ -12,7 +12,8 @@ export default gql`
 
     type Room {
         id : Int!
-        user : [User]
+        unreadTotal : Int!
+        users : [User]
         messages : [Message]
         createdAt : String!
         updatedAt : String!    

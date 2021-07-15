@@ -91,4 +91,5 @@ model Message {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   roomId    Int
+  read      Boolean  @default(false)
 }
