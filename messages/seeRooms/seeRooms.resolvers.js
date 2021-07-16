@@ -1,4 +1,6 @@
 import { protectedResolver } from "../../users/users.utils";
+import client from "../../client";
+
 
 export default {
     Query: {

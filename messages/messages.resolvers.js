@@ -24,5 +24,9 @@ export default {
                 }
             });
         }
+    },
+
+    Message: {
+        user: ({ id }) => client.message.findUnique({ where: { id } }).user(),
     }
 }
